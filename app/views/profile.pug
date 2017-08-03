@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1 Profile
+
+        #{user.email}
+    dl
+        dt Display name
+        dd #{user.displayName}
+        dt Email
+        dd #{user.email}
+
+    a(href="/logout") Logout
